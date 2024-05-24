@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Some of these ideas are taken from Great Stack! -->
+
+<head>
+    <title>William Zhang</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="description" content="An about me webpage">
+    <meta name="author" content="William Zhang">
+    <meta name ="viewport"  content="width=device-width, initial-scale-1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <script src="https://kit.fontawesome.com/498e6460e9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#projects">Personal Projects</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i> 
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Meet <span>William Zhang</span><br></h1>
+            <p class="welcome">Welcome to my website! Please check out my resume <span><i class="fa-solid fa-file"></i></span> below.</p>
+            <div id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact-left">
+                            <p><i class="fa-solid fa-envelope"></i></i>zhangywu@umich.edu</p>   
+                            <p><i class="fa-solid fa-phone"></i>630-890-8089</p>
+                            <div class="social-icons">
+                                <a href="https://www.linkedin.com/in/williamzhang04/"  target = "_blank"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://github.com/zhengwuzha7131"  target = "_blank"><i class="fa-brands fa-github"></i></a>
+                                <a href="images/resume.pdf" download><i class="fa-solid fa-file"></i></i></a>
+                            </div>
+                        </div>
+                         <div class="contact-right">
+                            <form name="submit-to-google-sheet">
+                                <input type="text" name="Name" placeholder="Your Name" required>
+                                <input type="email" name="Email" placeholder="Your Email", required>
+                                <textarea name="Message" rows="6" plcaeholder="Your Message"></textarea>
+                                <button type="submit" class="btn btn2">Submit</button>
+                            </form>
+                            <span id="msg"></span>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="cat">
+        <img src="images/cat2.png">
+        <img src="images/cat2.png">
+        <img src="images/cat2.png">
+        <img src="images/cat2.png">
+        <img src="images/cat2.png">
+        <img src="images/cat2.png">
+        <img src="images/cat2.png">
+    </div>
+</div>
+
+
+<!-----------about---------->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/about.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>William is a determined student at the University of Michigan Ann Arbor. 
+                    He's pursuing a major in Computer Engineering and a minor in Business. With aspirations to obtain a Masters's degree in Computer Science, 
+                    William aims to thrive in the software engineering field, making a significant impact through innovation and creativity.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Programming Languages</p>
+                    <p class="tab-links" onclick="opentab('frameworks')">Frameworks</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Java</span></li>
+                        <li><span>C++</span></li>
+                        <li><span>HTML</span></li>
+                        <li><span>CSS</span></li>
+                        <li><span>JavaScript</span></li>
+                        <li><span>Python</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="frameworks">
+                    <ul>
+                        <li><span>More to come!</span><br>Learning in progress...</li>
+                        <!-- <li><span>Dec 2021 - Jun 2023</span><br>Manager and chef at Ding Dang Sushi</li>
+                        <li><span>August 2021 - December 2021</span><br>Tennis Coach at Geneva Park District</li> -->
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2019-2023</span><br>Metea Valley High School</li>
+                        <li><span>2023-2027</span><br>University of Michigan Ann Arbor</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------------experiences---------------- -->
+<div id="experiences">
+    <div class="container">
+        <h1 class="sub-title">My Experiences</h1>
+        <div class="experiences-list">
+            <div>
+                <img src="images/ieee.png" ></i>
+                <h2>IEEE</h2>
+                <p><span>July 2023</span></p>
+                <p>Student volunteer at IEEE Conference in Chicago, IL</p>
+                <!-- <a href="ieee.html" target='_blank'>Learn more</a> -->
+            </div>
+            <div>
+                <img src="images/sushi.png" ></i>
+                <h2>Ding Dang</h2>
+                <p><span2>Dec 2021 - June 2023</span2></p>
+                <p>Cashier, Chef, and Manager at Naperville, IL</p>
+                <!-- <a href="#">Learn more</a> -->
+            </div>
+            <div>
+                <img src="images/geneva.png" ></i>
+                <h2>Geneva Park</h2>
+                <p><span>July 2023</span></p>
+                <p>Tennis coach for students ranging from kindergarten to 12th grade</p>
+                <!-- <a href="#">Learn more</a> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -------projects----- -->
+<div id="projects">
+    <div class="container">
+        <div class="sub-title">Personal Projects</div>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/cipher.png">
+                <div class="layer">
+                    <h3>Cipher program</h3>
+                    <p>A program where you can encrypt/decrypt your message!</p>
+                    <a href="https://github.com/zhengwuzha7131/EECS-183/tree/Project-3/Project3" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/battleship.png">
+                <div class="layer">
+                    <h3>Battleship game</h3>
+                    <p>A game of battleship against a CPU!</p>
+                    <a href="https://github.com/zhengwuzha7131/EECS-183/tree/Project-4"><i class="fa-brands fa-square-github"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/rps.jpg">
+                <div class="layer">
+                    <h3>Rock Paper Scissors</h3>
+                    <p>A game of rock paper scissors against your friends!</p>
+                    <a href="https://github.com/zhengwuzha7131/EECS-183/tree/Project-4"><i class="fa-brands fa-square-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="projects.html" class="btn" target="_blank">See more</a>
+    </div>
+</div>
+
+<!-- ----------cursor effects--------- -->
+
+<div id="cursor">
+    <div class="container">
+        <body>
+            <section>
+            </section>
+            <div class="light"></div>
+            <script type="text/javascript">
+                    var pos = document.documentElement;
+                    pos.addEventListener('mousemove', e =>{
+                        pos.style.setProperty('--x', e.clientX + 'px')
+                        pos.style.setProperty('--y', e.clientY + 'px')
+                    })
+            </script>
+        </body>
+
+    </div>
+</div>
+
+<!-- background effects -->
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+            sidemenu.style.right = "0";
+    }
+    function closemenu(){
+            sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<!-- Code used from jamiewilson form-to-google-sheets -->
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwCOFY3PGyIMFEapNsbojqfciF2MVP1X8lMF8AUmwUHDTyiKodALDay2tvc1dyMdHtp/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 3000)
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+</body>
+
+</html> 
